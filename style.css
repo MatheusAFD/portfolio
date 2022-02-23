@@ -1,0 +1,54 @@
+
+.top-menu{
+    display: flex;
+    width: 100%;
+    border: 1px solid;
+    
+}
+.font{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#menu{
+    /* border: 1px solid; */
+    margin-top: 10px;
+    
+}
+.home-info{
+    width: 100%;
+    border: 2px solid yellow;
+    margin-top: 100px;
+    height: 300px;
+}
+#titleInfo{
+    width: 50%;
+    float: left;
+    padding: 25px;
+    border: 2px solid red;
+    margin-left: 25px;
+ 
+}
+.title{
+    border: 1px solid;
+    width: 100%;
+}
+.additional-info{
+    border: 1px solid;
+    width: 100%;
+    margin-top: 30px;
+    word-wrap: break-word;
+    text-align: center;
+}
+#div-img-profile{
+    border: 3px solid blue;
+    width: 45%;
+    float: right;
+    height: 300px;
+    margin: 0 auto;
+
+}
+#img-profile{
+    max-width: 60%;
+    border: 5px solid;
+    height: auto;
+}
+
