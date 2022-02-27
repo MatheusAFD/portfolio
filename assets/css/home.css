@@ -32,7 +32,6 @@ html{
     float: left;
     padding: 25px;
     margin-left: 25px;
- 
 }
 .title h1{
     width: 100%;
@@ -59,7 +58,7 @@ html{
     gap: 2rem;
 }
 #marginIcon{
-    margin-left: 20px;
+    margin-left: 15px;
 }
 #divButtons{
     display: flex;
@@ -74,6 +73,9 @@ html{
 }
 #divButtons a{
     text-decoration: none;
+}
+.col-4{
+    margin-right: 15px;
 }
 .githubIcon p{
     color: white;
