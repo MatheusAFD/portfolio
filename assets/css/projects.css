@@ -1,0 +1,57 @@
+strong{
+    font-size: 32px;
+    color: #1fc1aa;
+}
+.projects{
+    width: 80%;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 500px;
+    margin: auto auto 200px auto;
+}
+.cards-h{
+    width: 100%;
+    height: 14rem;
+    display: flex;
+    margin-top: 40px;
+}
+.imgProject{
+    width: 25%;
+    height: auto;
+}
+.imgProject img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 5px 5px ;
+}
+.textProject{
+    margin-left: 10px;
+    width: 50%;
+}
+.textProject p{
+    line-height: 1.7;
+    text-align: justify;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.textProject strong{
+    font-size: 24px;
+}
+.spanIcon{
+    display: flex;
+    gap: 0.8rem;
+    width: 50%;
+    height: auto;
+    margin-top: 10px;
+}
+.spanIcon i{
+    font-size: 35px;
+}
+.spanIcon span{
+    color:   #ced3ba ;
+    font-size: 22px;
+    margin:  auto auto auto auto;
+}
+hr{
+    width: 50%;
+}
