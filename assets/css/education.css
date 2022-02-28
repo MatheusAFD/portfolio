@@ -33,13 +33,16 @@
     
 }
 .imgEduc{
-    width: 50%;
+    width: 40%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
 }
-
+.imgSuperior p{
+    margin-top: 20px;
+    text-align: center;
+}
 .iconEduc{
     text-align: center;
 }
@@ -48,18 +51,19 @@
     margin-top: 20px;
     color: #1fc1aa;
 }
-.textCard{
-    text-align: left;
-    line-height: 0.4;    
-}
 .textCard p{
-    margin-left: 10px;
-    margin-top: 12px;
+    margin: 25px;
+    line-height: 0;
+    text-align: left;
 }
 .hrCard{
     width: 80%;
     background-color:  #1fc1aa ;
     height: 1px;
+}
+h6{
+    margin: 5px;
+    color: #1fc1aa;
 }
 .button-30{
   align-items: center;
