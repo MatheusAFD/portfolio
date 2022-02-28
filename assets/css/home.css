@@ -39,48 +39,49 @@ html{
     font-weight: bold;
     color: #1fc1aa; /*Em decisão do verde ou do preto*/
 }
-.additional-info p{ 
-    
+.additional-info p{     
     width: 100%;
     margin-top: 30px;
     word-wrap: break-word;
     text-align: left;
 }
-.buttonsIcon i{
-    font-size: 40px;
-    color: white;
-    margin-left: 5px;
-    margin-top: 4px;
-}
-.githubIcon{
-    width: 100%;
-    display: flex;
-    gap: 2rem;
-}
-#marginIcon{
-    margin-left: 15px;
-}
-#divButtons{
-    display: flex;
-    border: 1px solid;
-    width: 30%;
-    height: auto;
-    border-color: white;
-    border-radius: 8px 2px 8px 2px;
-    background: #1fc1aa;
-    margin-left: 1px;
-    box-shadow: 10% 10%;
-}
-#divButtons a{
-    text-decoration: none;
-}
 .col-4{
     margin-right: 15px;
 }
-.githubIcon p{
+
+.twoButtons{
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+.divButtons{
+    justify-content: left;
+    width: 50%;
+    display: flex;
+    gap: 1rem;
+}
+.divButtons a{
+    text-decoration: none;
+}
+.divButtons button{
+    display: flex;
+    gap: 1rem;
+    background-color: #1fc1aa;
     color: white;
-    margin-top: 10px;
-    text-align: center;
+    border: none;
+    cursor: pointer;
+    width: 8rem;
+    height: 2.5rem;
+    position: relative;
+    border-radius: 5px 0px 5px 0px;
+}
+.divButtons button p{
+    font-size: 16px;
+    margin: auto auto auto auto;
+}
+.divButtons i{
+    font-size: 32px;
+    margin: auto auto auto auto;
 }
 #div-img-profile{
     width: 40%;
