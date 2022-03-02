@@ -1,85 +1,201 @@
 .container-education{
     width: 85%;
-    height: 20rem;
+    display: flex;
+    max-width: 980px;
+    height: 250px;
     border-radius: 10px 10px 10px 10px;
     margin: 200px auto 200px auto;
 }
-.title-education{
-    width: 100%;
-    height: 10%;
-}
-.title-education p{
-    text-align: center;
-    color: white;
-    size: 200px;
-    font-size: 24px;
-    font-weight: bold;
-}
 .cards{
     display: flex;
-    gap: 1rem;
+    max-width: 980px;
     width: 100%;
-    height: 85%;
+    height: 100%;
+    gap: 1rem;
     justify-content: center;
     gap: 3rem;
 }
 .cards div{
     width: 30%;
+    max-width: 980px;
     height: 100%;
-    margin-top: 5px;
     border-radius: 5px 5px 5px 5px;
     background-color: white;
     box-shadow:  0.1em 0.1em 0.5em gray;
-    
 }
-.imgEduc{
-    width: 40%;
+.iconEduc img{
+    width: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
 }
-.imgSuperior p{
-    margin-top: 20px;
-    text-align: center;
-}
 .iconEduc{
     text-align: center;
 }
 .iconEduc i{
-    font-size: 7rem;
+    font-size: 10rem;
     margin-top: 20px;
     color: #1fc1aa;
 }
-.textCard p{
-    margin: 25px;
-    line-height: 0;
-    text-align: left;
-}
-.hrCard{
-    width: 80%;
-    background-color:  #1fc1aa ;
-    height: 1px;
-}
 h6{
-    margin: 5px;
+    margin: 0.8rem;
     color: #1fc1aa;
+    font-size: 1.6rem;
 }
 .button-30{
-  align-items: center;
-  background-color: #FCFCFD;
-  border-radius: 4px;
-  border-width: 0;
-  background-color:  #1fc1aa ;
-  color: white;
-  cursor: pointer;
-  height: 48px;
-  justify-content: center;
-  line-height: 1;
-  padding-left: 16px;
-  padding-right: 16px;
-  position: relative;
-  text-decoration: none;
-  font-size: 18px;
+    align-items: center;
+    background-color: #FCFCFD;
+    border-radius: 6px;
+    background-color:  #1fc1aa ;
+    color: white;
+    cursor: pointer;
+    height: 36px;
+    justify-content: center;
+    line-height: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    
+  }
+  
+
+
+
+/* Tablet */
+@media screen and (max-width: 767px) {
+    .container-education{
+        width: 85%;
+        border-radius: 10px 10px 10px 10px;
+        margin: 200px auto 200px auto;
+    }
+    .title-education{
+        width: 100%;
+    }
+    .title-education p{
+        text-align: center;
+        color: white;
+        size: 200px;
+        font-size: 24px;
+        font-weight: bold;
+        border: 1px solid;
+    }
+    .cards{
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .cards div{
+        width: 30%;
+        max-width: 980px;
+        height: 100%;
+        border-radius: 5px 5px 5px 5px;
+        background-color: white;
+        box-shadow:  0.1em 0.1em 0.5em gray;
+    }
+    .imgEduc{
+        width: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25%;
+    }
+    .iconEduc{
+        text-align: center;
+    }
+    .iconEduc i{
+        font-size: 7rem;
+        margin-top: 20px;
+        color: #1fc1aa;
+    }
+    .button-30{
+        align-items: center;
+        background-color: #FCFCFD;
+        border-radius: 6px;
+        background-color:  #1fc1aa ;
+        color: white;
+        cursor: pointer;
+        height: 36px;
+        justify-content: center;
+        line-height: 1;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-decoration: none;
+        font-size: 18px;
+        border: none;
+      }
+      
 }
 
+
+
+@media screen and (max-width: 600px) {
+    .container-education{
+        width: 85%;
+        height: 350px;
+        max-height: 350px;
+        max-width: 600px;
+        border-radius: 10px 10px 10px 10px;
+        margin: 500px auto 200px auto;
+    }
+    .title-education{
+        width: 100%;
+    }
+    .title-education p{
+        text-align: center;
+        color: white;
+        size: 200px;
+        font-size: 24px;
+        font-weight: bold;
+        border: 1px solid;
+    }
+    .cards{
+        width: 100%;
+        display: block;
+        height: 60%;
+    }
+    .cards div{
+        width: 100%;
+        max-width: 980px;
+        height: 100%;
+        margin-top: 15px;
+        border-radius: 5px 5px 5px 5px;
+        background-color: white;
+        box-shadow:  0.1em 0.1em 0.5em gray;
+    }
+    .iconEduc img{
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+.iconEduc{
+        text-align: center;
+    }
+    .iconEduc i{
+        font-size: 6rem;
+        color: #1fc1aa;
+    }
+    
+    .button-30{
+        align-items: center;
+        background-color: #FCFCFD;
+        border-radius: 6px;
+        background-color:  #1fc1aa ;
+        color: white;
+        cursor: pointer;
+        height: 36px;
+        justify-content: center;
+        line-height: 1;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-decoration: none;
+        font-size: 18px;
+        border: none;
+      }
+}

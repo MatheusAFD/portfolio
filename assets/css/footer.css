@@ -1,0 +1,94 @@
+footer{
+    width: 100%;
+    height: 10rem;
+    background-color: #1fc1aa;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto auto auto;
+    display: flex;
+    color: white;
+}
+ul{
+    width: 50%;
+    display: block;
+    margin: auto auto auto auto;
+    font-size: 1.6rem;
+}
+div a:visited {
+    color: white;
+}
+div a:hover {
+    color: white;
+    text-decoration: none;
+} 
+div a:active {
+    color: white;
+}
+
+
+ @media screen and (max-width: 767px) {
+
+    footer{
+        width: 100%;
+        height: 15rem;
+        background-color: #1fc1aa;
+        justify-content: center;
+        align-items: center;
+        margin: auto auto auto auto;
+        display: flex;
+        color: white;
+    }
+    ul{
+        width: 100%;
+        display: block;
+        margin: 200px auto auto auto;
+        font-size: 1.6rem;
+    }
+    ul div{
+        width: 90%;
+        margin: 5rem auto auto auto;
+    }
+     div a:visited {
+         color: white;
+     }
+    div a:hover {
+         color: white;
+         text-decoration: none;
+     } 
+    div a:active {
+         color: white;
+     }
+}
+
+@media screen and (max-width: 600px) {
+    footer{
+        width: 100%;
+        height: 15rem;
+        background-color: #1fc1aa;
+        justify-content: center;
+        align-items: center;
+        margin: auto auto auto auto;
+        display: flex;
+        color: white;
+    }
+    ul{
+        width: 100%;
+        display: block;
+        margin: 200px auto auto auto;
+        font-size: 1.6rem;
+    }
+    ul div{
+        width: 90%;
+        margin: 5rem auto auto auto;
+    }
+     div a:visited {
+         color: white;
+     }
+    div a:hover {
+         color: white;
+         text-decoration: none;
+     } 
+    div a:active {
+         color: white;
+     }
+}
