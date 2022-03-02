@@ -1,63 +1,53 @@
-body{
-    font-family: 'Trebuchet MS', sans-serif;
-}
 html{
+    font-size: 62.5%;
     scroll-behavior: smooth;
 }
-.items{
-    display: flex;
-    gap: 0.75rem;
-    margin-left: 800px;
+body{
+    font-size: 1.6rem;
 }
-.nav{
-    margin-top: 10px;
+button:hover{
+    filter: brightness(140%);
 }
-.items p{
-    color: black;
-}
-.items a{
-    text-decoration: none;
-}
-.items i{
-    margin-top: 4px;
-    color: #1fc1aa;
-}
+
+
+
 .home-info{
     width: 100%;
+    max-width: 980px;
     margin-top: 100px;
     height: 300px;
 }
 #titleInfo{
-    width: 55%;
+    width: 50%;
+    max-width: 980px;
     float: left;
     padding: 25px;
-    margin-left: 25px;
 }
 .title h1{
-    width: 100%;
+    display: flex;
     font-family: Helvetica;
     font-weight: bold;
+    font-size: 3.1rem;
     color: #1fc1aa; /*Em decisão do verde ou do preto*/
 }
-.additional-info p{     
+.additional-info p{
+    display: flex;     
     width: 100%;
+    max-width: 980px;
     margin-top: 30px;
     word-wrap: break-word;
-    text-align: left;
+    text-align: justify;
+    font-size: 1.6rem;
 }
-.col-4{
-    margin-right: 15px;
-}
-
 .twoButtons{
     display: flex;
-    height: auto;
     width: 100%;
+    max-width: 980px;
 }
 .divButtons{
-    justify-content: left;
-    width: 50%;
     display: flex;
+    width: 50%;
+    max-width: 980px;
     gap: 1rem;
 }
 .divButtons a{
@@ -65,15 +55,94 @@ html{
 }
 .divButtons button{
     display: flex;
+    width: 100%;
+    font-size: 1.6rem;
     gap: 1rem;
     background-color: #1fc1aa;
     color: white;
-    border: none;
     cursor: pointer;
-    width: 8rem;
-    height: 2.5rem;
-    position: relative;
-    border-radius: 5px 0px 5px 0px;
+    border-radius: 7px 0px 7px 0px;
+    border: none;
+}
+.divButtons button p{
+    font-size: 1.6rem;
+    margin: auto auto auto auto;
+}
+.divButtons i{
+    font-size: 3.2rem;
+    margin: auto auto auto auto;
+}
+#div-img-profile{
+    display: flex;
+    width: 50%;
+    max-width: 980px;
+    float: right;
+    margin: 0 auto;
+}
+#img-profile{
+    width: 60%;
+    max-width: 980px;
+}
+
+
+/* Tablet */
+
+
+@media screen and (max-width: 767px) {
+    
+.home-info{
+    width: 100%;
+    max-width: 980px;
+    margin-top: 100px;
+    height: 300px;
+}
+#titleInfo{
+    width: 55%;
+    max-width: 980px;
+    float: left;
+    padding: 25px;
+
+}
+.title h1{
+    display: flex;
+    width: 100%;
+    max-width: 380px;
+    text-align: left;
+    float: none;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: #1fc1aa; /*Em decisão do verde ou do preto*/
+    font-size: 2.8rem;
+}
+.additional-info p{
+    display: flex;     
+    width: 250%;
+    max-width: 485px;
+    margin-top: 30px;
+    text-align: left;
+}
+.twoButtons{
+    display: flex;
+    height: auto;
+    width: 100%;
+    max-width: 380px;
+}
+.divButtons{
+    display: flex;
+    width: 50%;
+    max-width: 980px;
+    gap: 1rem;
+}
+.divButtons a{
+    text-decoration: none;
+}
+.divButtons button{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    background-color: #1fc1aa;
+    color: white;
+    cursor: pointer;
 }
 .divButtons button p{
     font-size: 16px;
@@ -84,12 +153,87 @@ html{
     margin: auto auto auto auto;
 }
 #div-img-profile{
-    width: 40%;
-    float: right;
-    height: 300px;
-    margin: 0 auto;
+    display: flex;
+    width: 45%;
+    max-width: 980px;
 }
 #img-profile{
-    max-width: 60%;
-    height: auto;
+    width: 80%;
+    max-width: 980px;
+}
+@media screen and (max-width: 600px) {
+
+    .home-info{
+        width: 100%;
+        max-width: 980px;
+        margin-top: 100px;
+        height: 300px;
+    }
+    #titleInfo{
+        width: 100%;
+        max-width: 980px;
+        padding: 25px;
+    }
+    .title h1{
+        display: flex;
+        width: 100%;
+        max-width: 380px;
+        text-align: center;
+        float: none;
+        font-family: Helvetica;
+        font-weight: bold;
+        color: #1fc1aa; /*Em decisão do verde ou do preto*/
+        font-size: 2.8rem;
+    }
+    .additional-info p{
+        display: flex;     
+        width: 100%;
+        max-width: 485px;
+        margin-top: 30px;
+        text-align: justify;
+    }
+    .twoButtons{
+        display: flex;
+        height: auto;
+        width: 100%;
+        max-width: 380px;
+
+    }
+    .divButtons{
+        display: flex;
+        width: 50%;
+        max-width: 980px;
+        gap: 1rem;
+    }
+    .divButtons a{
+        text-decoration: none;
+    }
+    .divButtons button{
+        display: flex;
+        width: 100%;
+        gap: 1rem;
+        background-color: #1fc1aa;
+        color: white;
+
+        cursor: pointer;
+
+    }
+    .divButtons button p{
+        font-size: 16px;
+        margin: auto auto auto auto;
+    }
+    .divButtons i{
+        font-size: 32px;
+        margin: auto auto auto auto;
+    }
+    #div-img-profile{
+        width: 100%;
+        max-width: 980px;
+    }
+    #img-profile{
+        width: 80%;
+        max-width: 980px;
+    }
+}
+
 }
