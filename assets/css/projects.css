@@ -1,191 +1,190 @@
-strong{
-    font-size: 32px;
-    color: #1fc1aa;
+strong {
+	font-size: 4rem;
+	color: #1fc1aa;
 }
-.projects{
-    width: 80%;
-    max-width: 980px;
-    margin-top: 100px;
-    margin-bottom: 500px;
-    margin: auto auto 200px auto;
-    
+
+.projects {
+	width: 80%;
+	max-width: 980px;
+	margin: 5rem auto 200px auto;
 }
-.cards-h{
-    
-    width: 90%;
-    max-width: 980px;
-    display: flex;
-    margin-top: 0px;
+
+.cards-h {
+	width: 90%;
+	max-width: 980px;
+	display: flex;
+	margin-top: 0px;
 }
-.imgProject{
-    width: 40%;
-    margin-left: 10px;
+
+.imgProject {
+	width: 40%;
+	margin-left: 10px;
 }
-.imgProject img{
-    width: 100%;
-    margin-top: 4.5rem;
-    border-radius: 5px 5px 5px 5px;
+
+.imgProject img {
+	width: 100%;
+	margin-top: 4.5rem;
+	border-radius: 5px 5px 5px 5px;
 }
-.textProject{
-    width: 70%;
-    max-width: 980px;
-    margin-left: 10px;
+
+.textProject {
+	width: 70%;
+	max-width: 980px;
+	margin-left: 10px;
 }
-.textProject p{
-    line-height: 1.7;
-    text-align: justify;
-    font-size: 14px;
-    margin-top: 20px;
+
+.textProject p {
+	line-height: 1.7;
+	text-align: justify;
+	font-size: 1.6rem;
+	margin-top: 20px;
 }
-.textProject strong{
-    font-size: 24px;
+
+.textProject strong {
+	font-size: 2.2rem;
 }
-.spanIcon{
-    display: flex;
-    gap: 0.8rem;
-    width: 50%;
-    max-width: 8rem;
-    margin-top: 10px;
+
+.spanIcon {
+	display: flex;
+	gap: 0.8rem;
+	width: 50%;
+	max-width: 8rem;
+	margin-top: 10px;
 }
-.spanIcon i{
-    font-size: 3.5rem;
+
+.spanIcon i {
+	font-size: 3.5rem;
 }
-.spanIcon span{
-    color:   #ced3ba ;
-    font-size: 2.2rem;
-    margin:  auto auto auto auto;
+
+.spanIcon span {
+	color: #ced3ba;
+	font-size: 2.2rem;
+	margin: auto auto auto auto;
 }
-hr{
-    width: 90%;
-    float: left;
+
+hr {
+	width: 90%;
+	float: left;
 }
 
 @media screen and (max-width: 767px) {
-    strong{
-        font-size: 32px;
-        color: #1fc1aa;
-    }
-    .projects{
-        width: 80%;
-        max-width: 980px;
-        margin-top: 100px;
-        margin-bottom: 500px;
-        margin: auto auto 200px auto;
-        
-        
-    }
-    .cards-h{
-        width: 90%;
-        max-width: 980px;
-        display: block;
-        margin-top: 30px;
-    }
-    .imgProject{
-        width: 100%;
-        margin-left: 1rem;
-    }
-    .imgProject img{
-        width: 60%;
-        margin-top: 0px;
-    }
-    .textProject{
-        
-        margin-left: 1rem;
-        width: 100%;
-        max-width: 980px;
-    }
-    .textProject p{
-        line-height: 1.7;
-        text-align: justify;
-        font-size: 14px;
-        margin-top: 20px;
-    }
-    .textProject strong{
-        font-size: 24px;
-    }
-    .spanIcon{
-        display: flex;
-        gap: 0.8rem;
-        width: 50%;
-        max-width: 8rem;
-        margin-top: 10px;
-    }
-    .spanIcon i{
-        font-size: 3.5rem;
-    }
-    .spanIcon span{
-        color:   #ced3ba ;
-        font-size: 2.2rem;
-        margin:  auto auto auto auto;
-    }
-    hr{
-        width: 90%;
-        margin-top: 30px;
-        margin-left: 10px;
-    }
+	strong {
+		font-size: 32px;
+		color: #1fc1aa;
+	}
+	.projects {
+		width: 80%;
+		max-width: 980px;
+		margin-top: 100px;
+		margin-bottom: 500px;
+		margin: auto auto 200px auto;
+	}
+	.cards-h {
+		width: 90%;
+		max-width: 980px;
+		display: block;
+		margin-top: 30px;
+	}
+	.imgProject {
+		width: 100%;
+		margin-left: 1rem;
+	}
+	.imgProject img {
+		width: 60%;
+		margin-top: 0px;
+	}
+	.textProject {
+		margin-left: 1rem;
+		width: 100%;
+		max-width: 980px;
+	}
+	.textProject p {
+		line-height: 1.7;
+		text-align: justify;
+		font-size: 14px;
+		margin-top: 20px;
+	}
+	.textProject strong {
+		font-size: 24px;
+	}
+	.spanIcon {
+		display: flex;
+		gap: 0.8rem;
+		width: 50%;
+		max-width: 8rem;
+		margin-top: 10px;
+	}
+	.spanIcon i {
+		font-size: 3.5rem;
+	}
+	.spanIcon span {
+		color: #ced3ba;
+		font-size: 2.2rem;
+		margin: auto auto auto auto;
+	}
+	hr {
+		width: 90%;
+		margin-top: 30px;
+		margin-left: 10px;
+	}
 }
 
 @media screen and (max-width: 600px) {
-    strong{
-        font-size: 32px;
-        color: #1fc1aa;
-    }
-    .projects{
-        width: 80%;
-        max-width: 980px;
-        margin-top: 100px;
-        margin-bottom: 500px;
-        margin: 50rem auto 20rem auto;
-    }
-    .cards-h{
-        width: 90%;
-        max-width: 980px;
-        display: block;
-        margin-top: 30px;
-    }
-    .imgProject{
-        width: 100%;
-        margin-left: 1rem;
-        border: 1px solid;
-    }
-    .imgProject img{
-        width: 100%;
-        margin-top: 0px;
-    }
-    .textProject{
-        
-        margin-left: 1rem;
-        width: 100%;
-        max-width: 980px;
-    }
-    .textProject p{
-        line-height: 1.7;
-        text-align: justify;
-        font-size: 14px;
-        margin-top: 20px;
-    }
-    .textProject strong{
-        font-size: 24px;
-    }
-    .spanIcon{
-        display: flex;
-        gap: 0.8rem;
-        width: 50%;
-        max-width: 8rem;
-        margin-top: 10px;
-    }
-    .spanIcon i{
-        font-size: 3.5rem;
-    }
-    .spanIcon span{
-        color:   #ced3ba ;
-        font-size: 2.2rem;
-        margin:  auto auto auto auto;
-    }
-    hr{
-        width: 90%;
-        margin-top: 30px;
-        margin-left: 10px;
-    }
+	strong {
+		font-size: 32px;
+		color: #1fc1aa;
+	}
+	.projects {
+		width: 80%;
+		max-width: 980px;
+		margin: 40rem auto 20rem auto;
+	}
+	.cards-h {
+		width: 90%;
+		max-width: 980px;
+		display: block;
+		margin-top: 30px;
+	}
+	.imgProject {
+		width: 100%;
+		margin-left: 1rem;
+	}
+	.imgProject img {
+		width: 100%;
+		margin-top: 0px;
+	}
+	.textProject {
+		margin-left: 1rem;
+		width: 100%;
+		max-width: 980px;
+	}
+	.textProject p {
+		line-height: 1.7;
+		text-align: justify;
+		font-size: 14px;
+		margin-top: 20px;
+	}
+	.textProject strong {
+		font-size: 24px;
+	}
+	.spanIcon {
+		display: flex;
+		gap: 0.8rem;
+		width: 50%;
+		max-width: 8rem;
+		margin-top: 10px;
+	}
+	.spanIcon i {
+		font-size: 3.5rem;
+	}
+	.spanIcon span {
+		color: #ced3ba;
+		font-size: 2.2rem;
+		margin: auto auto auto auto;
+	}
+	hr {
+		width: 90%;
+		margin-top: 30px;
+		margin-left: 10px;
+	}
 }
-
