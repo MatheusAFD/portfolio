@@ -13,14 +13,17 @@ button:hover {
 
 .home-info {
 	width: 100%;
-	max-width: 980px;
+	max-width: 1920px;
 	margin-top: 100px;
 	height: 300px;
 }
-
+.container{
+	width: 100%;
+	max-width: 1920px;
+}
 #titleInfo {
 	width: 50%;
-	max-width: 980px;
+	max-width: 1920px;
 	float: left;
 	padding: 25px;
 }
@@ -37,7 +40,7 @@ button:hover {
 .additional-info p {
 	display: flex;
 	width: 100%;
-	max-width: 980px;
+	max-width: 1920px;
 	margin-top: 30px;
 	word-wrap: break-word;
 	text-align: justify;
@@ -47,13 +50,13 @@ button:hover {
 .twoButtons {
 	display: flex;
 	width: 100%;
-	max-width: 980px;
+	max-width: 1920px;
 }
 
 .divButtons {
 	display: flex;
 	width: 50%;
-	max-width: 980px;
+	max-width: 1920px;
 	gap: 1rem;
 }
 
@@ -86,14 +89,14 @@ button:hover {
 #div-img-profile {
 	display: flex;
 	width: 50%;
-	max-width: 980px;
+	max-width: 1920px;
 	float: right;
 	margin: 0 auto;
 }
 
 #img-profile {
 	width: 60%;
-	max-width: 980px;
+	max-width: 1920px;
 }
 
 
@@ -102,13 +105,13 @@ button:hover {
 @media screen and (max-width: 767px) {
 	.home-info {
 		width: 100%;
-		max-width: 980px;
+		max-width: 1920px;
 		margin-top: 100px;
 		height: 300px;
 	}
 	#titleInfo {
 		width: 55%;
-		max-width: 980px;
+		max-width: 1920px;
 		float: left;
 		padding: 25px;
 	}
@@ -140,7 +143,7 @@ button:hover {
 	.divButtons {
 		display: flex;
 		width: 50%;
-		max-width: 980px;
+		max-width: 1920px;
 		gap: 1rem;
 	}
 	.divButtons a {
@@ -165,22 +168,22 @@ button:hover {
 	#div-img-profile {
 		display: flex;
 		width: 45%;
-		max-width: 980px;
+		max-width: 1920px;
 	}
 	#img-profile {
 		width: 80%;
-		max-width: 980px;
+		max-width: 1920px;
 	}
 	@media screen and (max-width: 600px) {
 		.home-info {
 			width: 100%;
-			max-width: 980px;
+			max-width: 1920px;
 			height: 300px;
 			margin-top: -10px;
 		}
 		#titleInfo {
 			width: 100%;
-			max-width: 980px;
+			max-width: 1920px;
 			padding: 25px;
 		}
 		.title h1 {
@@ -210,7 +213,7 @@ button:hover {
 		.divButtons {
 			display: flex;
 			width: 50%;
-			max-width: 980px;
+			max-width: 1920px;
 			gap: 1rem;
 		}
 		.divButtons a {
@@ -234,11 +237,11 @@ button:hover {
 		}
 		#div-img-profile {
 			width: 100%;
-			max-width: 980px;
+			max-width: 1920px;
 		}
 		#img-profile {
 			width: 80%;
-			max-width: 980px;
+			max-width: 1920px;
 		}
 	}
 }

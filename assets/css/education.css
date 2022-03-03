@@ -28,7 +28,7 @@
 
 .imgSuperior{
 	width: 100%;
-	border: 0.08pt solid gray;
+	border: 0.08pt solid white;
 }
 .imgSuperior img{
 	width: 50%;
@@ -104,12 +104,14 @@
 		background-color: white;
 		box-shadow: 0.1em 0.1em 0.5em gray;
 	}
-	.imgEduc {
-		width: 60%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 25%;
+	.imgSuperior{
+		width: 100%;
+		border: 0.08pt solid white;
+	}
+	.imgSuperior img{
+		width: 80%;
+		display: table;
+		margin: 1rem auto 0 auto;
 	}
 	.iconEduc {
 		text-align: center;
@@ -173,12 +175,12 @@
 	}
 	.imgSuperior{
 		width: 30%;
-		border: 0.08pt solid gray;
+		border: 0.08pt solid white;
 	}
 	.imgSuperior img{
-		width: 40%;
+		width: 33%;
 		display: table;
-		margin: 1rem auto 0 auto;
+		margin: 0.2rem auto 0 auto;
 	}
 	.iconEduc {
 		text-align: center;
