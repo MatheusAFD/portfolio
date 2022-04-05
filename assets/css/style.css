@@ -1,0 +1,19 @@
+/* Global */
+@import url(./global/global.css);
+@import url(./global/header.css);
+@import url(./global/footer.css);
+/* Utilidades */
+@import url(./utilidades/cores.css);
+@import url(./utilidades/tipografia.css);
+
+/* Introdução */
+@import url(./introducao/introducao.css);
+
+/* Educação */
+@import url(./educacao/cards.css);
+
+/* Projetos */
+@import url(./projetos/projetos.css);
+
+/* Plugin */
+@import url(./plugin/anime.css);
