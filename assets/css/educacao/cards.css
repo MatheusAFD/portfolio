@@ -1,0 +1,53 @@
+.card {
+  padding: 40px 20px;
+  margin-top: 200px;
+  border-radius: 4px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  align-items: center;
+  padding: 5px 20px;
+  z-index: 1;
+}
+
+.card-item:nth-child(2):before {
+  content: "";
+  width: 52px;
+  height: 52px;
+  top: -15px;
+  left: -15px;
+  background-image: url("../../img/icons/diploma.svg");
+  position: absolute;
+  z-index: 0;
+}
+
+.card-item i {
+  color: var(--cor-8);
+  font-size: 8rem;
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .card {
+    margin-top: 100px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .card-item:nth-child(2):before {
+    display: none;
+  }
+  .card-item {
+    border-color: rgba(0, 0, 0, 1);
+  }
+}

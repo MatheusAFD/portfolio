@@ -1,0 +1,32 @@
+.footer-bg {
+  background-color: var(--cor-10);
+}
+.footer {
+  padding: 60px 60px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+.footer-conteudo {
+  margin-top: 20px;
+}
+@media (max-width: 800px) {
+  .footer li {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer li:nth-child(2) {
+    display: none;
+  }
+}
+
+footer nav ul li a:hover {
+  color: var(--cor-5);
+}

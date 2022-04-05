@@ -4,186 +4,151 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>webFolio Matheus</title>
-    <link rel=icon href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/svgs/solid/code.svg">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="index.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/home.css">
-    <link rel="stylesheet" href="assets/css/education.css">
-    <link rel="stylesheet" href="assets/css/projects.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio Web Matheus">
+  <title>Portfolio Matheus</title>
+  <link rel=icon href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/svgs/solid/code.svg">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar-container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+  <header>
+    <nav class="container">
+      <ul class="header-menu fadeInDown" data-anime="600">
+        <li>
+          <a class="nav-link" aria-disabled="true" href="#Home">Home</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#formacao">Educação</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#projetos">Projetos</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#contato">Contato</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" aria-disabled="true" href="#Home">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#educacao">Educação</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projetos">Projetos</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <div class="home-info" id="home">
-            <div class="col-xs-6" id="titleInfo">
-                <div class="title">
-                    <h1>Olá, eu sou o Matheus, Desenvolvedor web backend</h1>
-                </div>
-                <div class="additional-info">
-                    <p>Olá, meu nome é Matheus Araújo e atualmente sou estudante de Ciência da Computação,
-                        com intuito de trabalhar com desenvolvimento web e mobile.
-                    </p>
-                </div>
-                <div class="twoButtons">
-                    <div class="divButtons">
-                        <a href="https://github.com/MatheusAFD/" target="_blank">
-                            <button role="button">
-                                <p>Github</p><i class="fa-brands fa-github" id="marginIcon"></i>
-                            </button>
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/matheus-ara%C3%BAjo-4b1a28233/" target="_blank">
-                            <button role="button">
-                                <p>Linkedin</p> <i class="fa-brands fa-linkedin" id="marginIcon"></i>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6" id="div-img-profile">
-                <img src="assets/img/profile.jpg" class="rounded-circle mx-auto d-block alt=" Cinque Terre"
-                    id="img-profile">
-            </div>
+  <main class="main-bg">
+    <div class="container introducao">
+      <div class="intro">
+        <h2 class="font-1-xl cor-9 titulo fadeInLeft" data-anime="200">Introduçao</h2>
+        <h1 class="font-1-mml cor-8 fadeInLeft" data-anime="400">Olá, eu sou o Matheus, Desenvolvedor web <br> front-end<span class="ponto">.</span></h1>
+        <p class="font-2-m fadeInLeft" data-anime="600">Meu nome é Matheus Araújo e atualmente sou estudante de Ciência da Computação.
+          Por meados de março de 2022, descobri minha paixão pelo front-end e comecei os estudos focado nisso.
+        </p>
+        <div class="links fadeInDown" data-anime="800">
+          <a href="https://www.linkedin.com/in/matheus-ara%C3%BAjo-4b1a28233/" target="_blank">Linkedin</a>
+          <a href="https://github.com/matheusafd" target="_blank">Github</a>
         </div>
+      </div>
+      <div class="img fadeInRight" data-anime="1000">
+        <img src="assets/img/profile.jpg" alt="Imagem de perfil de Matheus">
+      </div>
+  </main>
 
-    
-    <div class="container-education" id="educacao">
 
-        <div class="cards">
-            <div class="iconEduc">
-                <i class="fa-solid fa-school"></i>
-                <p>Ensino básico</p>
-                <span class="textCard">
-                </span>
-            </div>
+  <section class="card container introducao-conteudo">
+    <h2 class="font-1-xxl cor-9 titulo" id="formacao">Formação</h2>
+    <ul class="cards font-2-m">
+      <li class="card-item">
+        <i class="fa-solid fa-school"></i>
+        <p>Ensino básico</p>
+        <span class="textCard"></span>
+      </li>
 
-            <div class="imgSuperior">
-                <img src="assets/img/ifce.png" alt="">
-            </div>
-
-            <div class="iconEduc">
-                <i class="fa-solid fa-certificate"></i>
-                <p>Certificados</p>
-                <button class="button-30" role="button">Acesse</button>
-            </div>
+      <li class="card-item">
+        <div>
+          <img src="assets/img/ifce.png" alt="Logo do IFCE">
         </div>
+      </li>
+
+      <li class="card-item">
+        <i class="fa-solid fa-certificate"></i>
+        <p>Certificados</p>
+        <a href="./" class="botao">Acessar</a>
+      </li>
+
+    </ul>
     </div>
+  </section>
 
-    <div class="projects">
-        <strong id="projetos">Projetos</strong>
-        <div class="cards-h">
-
-            <div class="textProject">
-                <strong>Portifolio Web</strong>
-                <div class="spanIcon">
-                    <i class="fa-brands fa-html5" style="color: #e45124  ;"></i>
-                    <i class="fa-brands fa-css3-alt" style="color: #0873b7 ;"></i>
-                    <span>Web</span>
-                </div>
-                <p>
-                    Nesse projeto desenvolvi um Portifolio Web, utilizando apenas HTML e CSS, visando
-                    aperfeiçoamento pessoal no básico de front-end, com foco na responsividade.
-                </p>
+  <section class="container projetos introducao-conteudo">
+    <h2 class="font-1-xxl cor-9 titulo" id="projetos">Projetos</h2>
+    <div>
+      <ul class="projetos-item">
+        <li class="projetos-container">
+          <div class="projetos-conteudo">
+            <p class="font-2-l cor-9 titulo">Portfolio Web</p>
+            <div class="spanIcon font-1-mml">
+              <img src="./assets/img/icons/html-5.png" alt="Icone HTML">
+              <img src="./assets/img/icons/css-3.png" alt="Icone CSS">
+              <img src="./assets/img/icons/js.png" alt="Icone JavaScript">
+              <span class=" font-1-l cor-7">Web</span>
             </div>
-            <div class="imgProject">
-                <img src="assets/img/thumb.jpg" alt="">
+            <p class="font-2-m cor-9">
+              Nesse projeto desenvolvi um Portifolio Web, utilizando apenas HTML, CSS e JavaScript, visando
+              aperfeiçoamento pessoal no básico de front-end, com foco na responsividade.
+            </p>
+          </div>
+          <div class="imgProject">
+            <img src="assets/img/thumb.jpg" alt="Imagem HTML5 CSS3">
+          </div>
+        </li>
+        <li class="projetos-container">
+          <div class="projetos-conteudo">
+            <p class="font-2-l cor-9 titulo">Totem de consulta</p>
+            <div class="spanIcon font-1-mml">
+              <img src="./assets/img/icons/php.png" alt="Icone php">
+              <img src="./assets/img/icons/sql-server.png" alt="Icone sql-server">
+              <span class=" font-1-l cor-7">Web</span>
             </div>
-        </div>
-        <hr>
-        <div class="cards-h">
-
-            <div class="textProject">
-                <strong>Totem de consulta</strong>
-                <div class="spanIcon">
-                    <i class="fa-brands fa-laravel" style="color: red;"></i>
-                    <i class="fa-solid fa-database" style="color: orange ;"></i>
-                    <span>Web</span>
-                </div>
-                <p>
-                    Projeto realizado durante o periodo de estágio do curso técnico, feito com intuito de facilitar o
-                    acesso a informação
-                    sobre velórios organizados pela empresa. CRUD realizado com o framework Laravel (PHP) e SQL Server
-                    como database.
-                </p>
-            </div>
-            <div class="imgProject">
-                <img src="assets/img/totem.png" alt="">
-            </div>
-        </div>
-
+            <p class="font-2-m cor-9">
+              Projeto realizado durante o periodo de estágio do curso técnico, feito com intuito de facilitar o acesso a informação sobre velórios organizados pela empresa. CRUD realizado com o framework Laravel (PHP) e SQL Server como database.
+            </p>
+          </div>
+          <div class="imgProject">
+            <img src="assets/img/totem.png" alt="Imagem HTML5 CSS3">
+          </div>
+        </li>
+      </ul>
     </div>
-    </div>
-    <footer id="contato">
-        <div class="footer">
-            <ul>
-                <div>
-                    <a href="https://github.com/MatheusAFD/" target="_blank">
-                        <ol>
-                            <i class="fa-brands fa-github"></i> Github: MatheusAFD
-                        </ol>
-                    </a>
-                    <a href="https://www.linkedin.com/in/matheus-ara%C3%BAjo-4b1a28233/" target="_blank">
-                        <ol>
-                            <i class="fa-brands fa-linkedin"></i> Linkedin: Matheus Araújo
-                        </ol>
-                    </a>
-                    <ol>
-                        <i class="fa-solid fa-envelope"></i> Email: matheus.daf@outlook.com
-                    </ol>
-                </div>
-            </ul>
-        </div>
-    </footer>
-</div>
+  </section>
+
+  <footer class="footer-bg" id="contato">
+    <nav class="container">
+      <ul class="color-7 footer font-2-m cor-2">
+        <li>
+          <p>Redes sociais</p>
+          <div class="footer-conteudo">
+            <a href="https://github.com/MatheusAFD/" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+            <a href="https://www.linkedin.com/in/matheus-ara%C3%BAjo-4b1a28233/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+          </div>
+        </li>
+        <li>
+          <p>Contato</p>
+          <div class="footer-conteudo">
+            <a href="mailto:matheus.daf@outlook.com"><i class="fa-solid fa-envelope"></i> matheus.daf@outlook.com</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
