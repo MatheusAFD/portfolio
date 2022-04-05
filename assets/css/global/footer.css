@@ -2,31 +2,15 @@
   background-color: var(--cor-10);
 }
 .footer {
-  padding: 60px 60px;
+  padding: 60px 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-content: center;
   margin-top: 80px;
 }
 .footer-conteudo {
   margin-top: 20px;
 }
-@media (max-width: 800px) {
-  .footer li {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 600px) {
-  .footer {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .footer li:nth-child(2) {
-    display: none;
-  }
-}
-
-footer nav ul li a:hover {
-  color: var(--cor-5);
+.footer p:last-child {
+  margin-top: 20px;
 }

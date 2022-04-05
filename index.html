@@ -12,7 +12,7 @@
   <meta name="description" content="Portfolio Web Matheus">
   <title>Portfolio Matheus</title>
   <link rel=icon href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/svgs/solid/code.svg">
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -27,7 +27,7 @@
     <nav class="container">
       <ul class="header-menu fadeInDown" data-anime="600">
         <li>
-          <a class="nav-link" aria-disabled="true" href="#Home">Home</a>
+          <a class="nav-link" aria-disabled="true" href="#home">Home</a>
         </li>
         <li>
           <a class="nav-link" href="#formacao">Educação</a>
@@ -45,14 +45,14 @@
   <main class="main-bg">
     <div class="container introducao">
       <div class="intro">
-        <h2 class="font-1-xl cor-9 titulo fadeInLeft" data-anime="200">Introduçao</h2>
+        <h2 class="font-1-xl cor-9 titulo fadeInLeft" data-anime="200" id="home">Introduçao</h2>
         <h1 class="font-1-mml cor-8 fadeInLeft" data-anime="400">Olá, eu sou o Matheus, Desenvolvedor web <br> front-end<span class="ponto">.</span></h1>
         <p class="font-2-m fadeInLeft" data-anime="600">Meu nome é Matheus Araújo e atualmente sou estudante de Ciência da Computação.
           Por meados de março de 2022, descobri minha paixão pelo front-end e comecei os estudos focado nisso.
         </p>
         <div class="links fadeInDown" data-anime="800">
-          <a href="https://www.linkedin.com/in/matheus-ara%C3%BAjo-4b1a28233/" target="_blank">Linkedin</a>
-          <a href="https://github.com/matheusafd" target="_blank">Github</a>
+          <a href="https://www.linkedin.com/in/matheus-ara%C3%BAjo-4b1a28233/" target="_blank">Linkedin <i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/matheusafd" target="_blank">Github <i class="fa-brands fa-github"></i></a>
         </div>
       </div>
       <div class="img fadeInRight" data-anime="1000">
@@ -67,7 +67,6 @@
       <li class="card-item">
         <i class="fa-solid fa-school"></i>
         <p>Ensino básico</p>
-        <span class="textCard"></span>
       </li>
 
       <li class="card-item">
@@ -79,7 +78,9 @@
       <li class="card-item">
         <i class="fa-solid fa-certificate"></i>
         <p>Certificados</p>
-        <a href="./" class="botao">Acessar</a>
+        <div class="links">
+          <button class="botaoModal">Acessar</button>
+        </div>
       </li>
 
     </ul>
@@ -94,9 +95,9 @@
           <div class="projetos-conteudo">
             <p class="font-2-l cor-9 titulo">Portfolio Web</p>
             <div class="spanIcon font-1-mml">
-              <img src="./assets/img/icons/html-5.png" alt="Icone HTML">
-              <img src="./assets/img/icons/css-3.png" alt="Icone CSS">
-              <img src="./assets/img/icons/js.png" alt="Icone JavaScript">
+              <img src="./assets/img/icons/html-5.png" alt="Icone HTML" width="24" height="24">
+              <img src="./assets/img/icons/css-3.png" alt="Icone CSS" width="24" height="24">
+              <img src="./assets/img/icons/js.png" alt="Icone JavaScript" width="24" height="24">
               <span class=" font-1-l cor-7">Web</span>
             </div>
             <p class="font-2-m cor-9">
@@ -112,7 +113,7 @@
           <div class="projetos-conteudo">
             <p class="font-2-l cor-9 titulo">Totem de consulta</p>
             <div class="spanIcon font-1-mml">
-              <img src="./assets/img/icons/php.png" alt="Icone php">
+              <img src="./assets/img/icons/php.png" alt="Icone php" width="24" height="24">
               <img src="./assets/img/icons/sql-server.png" alt="Icone sql-server">
               <span class=" font-1-l cor-7">Web</span>
             </div>
@@ -132,23 +133,38 @@
     <nav class="container">
       <ul class="color-7 footer font-2-m cor-2">
         <li>
-          <p>Redes sociais</p>
+          <p class="font-1-l">Contato</p>
           <div class="footer-conteudo">
-            <a href="https://github.com/MatheusAFD/" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
-            <a href="https://www.linkedin.com/in/matheus-ara%C3%BAjo-4b1a28233/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+            <a href="https://github.com/MatheusAFD/" target="_blank">
+              <i class="fa-brands fa-github"></i> Github</a>
+            <a href="https://www.linkedin.com/in/matheus-ara%C3%BAjo-4b1a28233/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+              Linkedin</a>
+            <a href="mailto:matheus.daf@outlook.com"><i class="fa-solid fa-envelope">
+              </i> matheus.daf@outlook.com</a>
           </div>
-        </li>
-        <li>
-          <p>Contato</p>
-          <div class="footer-conteudo">
-            <a href="mailto:matheus.daf@outlook.com"><i class="fa-solid fa-envelope"></i> matheus.daf@outlook.com</a>
-          </div>
+          <p>Copyright © 2022 — Matheus Araújo</p>
         </li>
       </ul>
     </nav>
   </footer>
+
+  <div id="modal-promocao" class="modal-container">
+    <div class="modal">
+      <button class="fechar">x</button>
+      <h3>Meus certificados</h3>
+      <div class="modal-certificados">
+        <div>
+          <p>Origamid HTML & CSS</p>
+          <img src="./assets/img/certificados/certificate-html-css-origamid/certificate-html-css-origamid-1.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="./js/plugins/simple-anime.js"></script>
   <script src="./js/index.js"></script>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>

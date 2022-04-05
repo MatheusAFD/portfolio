@@ -12,7 +12,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  border: 0.5px solid rgba(0, 0, 0, 0.3);
+  border: 3px solid var(--cor-5);
+  box-shadow: 0 0 0 3px var(--cor-2);
   border-radius: 4px;
   align-items: center;
   padding: 5px 20px;
@@ -35,19 +36,30 @@
   font-size: 8rem;
   margin-top: 20px;
 }
-
+.botaoModal {
+  font-size: 1rem;
+  color: var(--cor-10);
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: var(--cor-4);
+  border: none;
+  color: var(--cor-12);
+}
+.botaoModal:hover {
+  filter: brightness(90%);
+}
 @media (max-width: 800px) {
   .card {
     margin-top: 100px;
   }
   .cards {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
   }
   .card-item:nth-child(2):before {
     display: none;
   }
   .card-item {
-    border-color: rgba(0, 0, 0, 1);
+    box-shadow: 0 0 0 3px var(--cor-2);
   }
 }

@@ -125,6 +125,9 @@ hr {
   .introducao-conteudo h2 {
     margin-left: 20px;
   }
+  .intro h2::before {
+    top: 6px;
+  }
 }
 
 @media (max-width: 200px) {

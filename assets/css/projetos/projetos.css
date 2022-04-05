@@ -30,8 +30,8 @@
 }
 
 @media (max-width: 800px) {
-  .projetos-item {
-    max-width: 600px;
+  .imgProject {
+    margin-left: 0px;
   }
   .projetos-container {
     grid-template-columns: 1fr;
@@ -44,9 +44,20 @@
     margin-top: 20px;
   }
   .imgProject img {
-    max-width: 300px;
+    max-width: 450px;
   }
   .projetos-conteudo p {
-    max-width: 40ch;
+    max-width: 55ch;
+  }
+}
+
+@media (max-width: 510px) {
+  .imgProject img {
+    max-width: 320px;
+  }
+}
+@media (max-width: 400px) {
+  .imgProject img {
+    max-width: 280px;
   }
 }
