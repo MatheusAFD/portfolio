@@ -24,7 +24,7 @@
   width: 100%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .header-menu {
     flex-wrap: wrap;
     justify-content: center;
