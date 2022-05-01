@@ -11,6 +11,9 @@
 .footer-conteudo {
   margin-top: 20px;
 }
+.footer-conteudo a:hover {
+  color: #000000;
+}
 .footer p:last-child {
   margin-top: 20px;
 }
