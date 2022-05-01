@@ -15,13 +15,13 @@
 .links {
   display: flex;
   gap: 1rem;
-  margin-top: 0.5rem;
+  margin-top: 2rem;
 }
 .button-40 {
   display: flex;
-  background-color: #111827;
+  background-color: var(--cor-13);
   border: 1px solid transparent;
-  border-radius: 0.75rem;
+  border-radius: 0.5rem;
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
@@ -34,19 +34,11 @@
   line-height: 1.5rem;
   padding: 0.75rem 1.2rem;
   text-align: center;
-  text-decoration: none #6b7280 solid;
-  text-decoration-thickness: auto;
-  transition-duration: 0.2s;
-  transition-property: background-color, border-color, color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
   width: auto;
 }
 
 .button-40:hover {
-  background-color: #374151;
+  background-color: rgba(17, 24, 39, 0.8);
 }
 
 .button-40:focus {
@@ -66,7 +58,7 @@
     grid-template-columns: 1fr;
   }
   .introducao .img {
-    margin-top: 20px;
+    margin-top: 2.5rem;
   }
   .introducao img {
     width: 80%;

@@ -12,8 +12,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  border: 3px solid var(--cor-5);
-  box-shadow: 0 0 0 3px var(--cor-2);
+  box-shadow: 0 0 0 3px rgba(17, 24, 39, 0.75);
   border-radius: 4px;
   align-items: center;
   padding: 5px 20px;
@@ -32,7 +31,7 @@
 }
 
 .card-item i {
-  color: #111827;
+  color: var(--cor-13);
   font-size: 8rem;
   margin-top: 20px;
 }

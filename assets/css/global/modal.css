@@ -82,7 +82,7 @@
   .modal {
     height: 65vh;
     max-height: 100%;
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
   }
 }
