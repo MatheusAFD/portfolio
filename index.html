@@ -12,7 +12,7 @@
   <meta name="description" content="Portfolio Web Matheus">
   <title>Portfolio Matheus</title>
   <link rel=icon href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/svgs/solid/code.svg">
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -62,71 +62,74 @@
 
 
   <section class="card container introducao-conteudo">
-    <h2 class="font-1-xxl cor-9 titulo" id="formacao">Formação</h2>
-    <ul class="cards font-2-m">
-      <li class="card-item">
-        <i class="fa-solid fa-school"></i>
-        <p class="font-1-m">Técnico em informática</p>
-      </li>
-
-      <li class="card-item">
-        <div>
-          <img src="assets/img/ifce.png" alt="Logo do IFCE">
-        </div>
-      </li>
-
-      <li class="card-item">
-        <i class="fa-solid fa-certificate"></i>
-        <p class="font-1-m">Certificados</p>
-        <div class="links">
-          <button class="botaoModal button-40">Acessar</button>
-        </div>
-      </li>
-
-    </ul>
+    <div class="titulo-formacao">
+      <h4 class="font-2-xl" id="formacao">Formação</h4>
+      <p class="font-1-m">Estudo técnico ao longo dos anos. 🚀</p>
     </div>
+
+    <ul class="cards">
+      <li class="card-item">
+        <img loading="lazy" src="./assets/img/tecnico.png" alt="">
+        <h5 class="font-1-m-b titulo-formacao">Técnico em informática</h5>
+        <div class="descricao">
+          <p class="cor-6 descricao">Curso <strong class="cor-8">técnico em informática</strong> realizando de forma integrada ao Ensino médio na escola EEEP Professor Onélio Porto.</p>
+        </div>
+      </li>
+      <li class="card-item">
+        <img loading="lazy" src="./assets/img/college.png" alt="">
+        <h5 class="font-1-m-b titulo-formacao">Ciência da Computação - IFCE</h5>
+        <div class="descricao">
+          <p class="cor-6 ">Cursando <strong class="cor-8">Ciência da computação</strong> pelo <strong class="cor-8">IFCE</strong> - Campus Maracanaú, atualmente no terceiro periodo, previsão de formação para 2025/2.</p>
+        </div>
+      </li>
+      <li class="card-item">
+        <img loading="lazy" src="./assets/img/certificate.jpg" alt="">
+        <h5 class="font-1-m-b titulo-formacao">Certificados</h5>
+        <button class="botaoModal button-40 card-button">Acessar</button>
+        <div class="descricao">
+          <p class="cor-6 descricao">Acesse meus <strong class="cor-8">Certificados</strong> obtidos durante todo o processo de especialização nos estudos.</p>
+        </div>
+      </li>
+    </ul>
+
   </section>
 
-  <section class="container projetos introducao-conteudo">
-    <h2 class="font-2-xl cor-9 titulo" id="projetos">Projetos</h2>
-    <div>
-      <ul class="projetos-item">
-        <li class="projetos-container">
-          <div class="projetos-conteudo">
-            <p class="font-2-l cor-9 titulo">Portfolio Web</p>
-            <div class="spanIcon font-1-mml">
-              <img src="./assets/img/icons/html-5.png" alt="Icone HTML" width="24" height="24">
-              <img src="./assets/img/icons/css-3.png" alt="Icone CSS" width="24" height="24">
-              <img src="./assets/img/icons/js.png" alt="Icone JavaScript" width="24" height="24">
-              <span class=" font-1-l cor-7">Web</span>
-            </div>
-            <p class="font-2-m cor-9">
-              Nesse projeto desenvolvi um Portifolio Web, utilizando apenas HTML, CSS e JavaScript, visando
-              aperfeiçoamento pessoal no básico de front-end, com foco na responsividade.
-            </p>
-          </div>
-          <div class="imgProject">
-            <img src="assets/img/thumb.jpg" alt="Imagem HTML5 CSS3">
-          </div>
-        </li>
-        <li class="projetos-container">
-          <div class="projetos-conteudo">
-            <p class="font-2-l cor-9 titulo">Totem de consulta</p>
-            <div class="spanIcon font-1-mml">
-              <img src="./assets/img/icons/php.png" alt="Icone php" width="24" height="24">
-              <img src="./assets/img/icons/sql-server.png" alt="Icone sql-server">
-              <span class=" font-1-l cor-7">Web</span>
-            </div>
-            <p class="font-2-m cor-9">
-              Projeto realizado durante o periodo de estágio do curso técnico, feito com intuito de facilitar o acesso a informação sobre velórios organizados pela empresa. CRUD realizado com o framework Laravel (PHP) e SQL Server como database.
-            </p>
-          </div>
-          <div class="imgProject">
-            <img src="assets/img/totem.png" alt="Imagem HTML5 CSS3">
-          </div>
-        </li>
-      </ul>
+  <section class="container projetos" id="projetos">
+    <div class="titulo-formacao">
+      <h4 class="font-2-xl" id="formacao">Projetos</h4>
+      <p class="font-1-m">Projetos desenvolvidos ao longo da carreira. ☕</p>
     </div>
+    <ul class="projetosCard">
+      <li class="projetos-item">
+        <img loading="lazy" src="./assets/img/thumb.jpg" alt="">
+        <div class="projetos-informacao">
+          <h3 class="font-1-m-b">Portfolio Web</h3>
+          <p class="cor-8">Web</p>
+          <p class="font-2-xs">Nesse projeto desenvolvi um Portifolio Web, utilizando apenas <strong class="cor-8">HTML</strong>, <strong class="cor-8">CSS</strong> e <strong class="cor-8">JavaScript</strong>, visando aperfeiçoamento pessoal no básico de front-end, com foco na responsividade.</p>
+          <p class="cor-8">Tecnologias utilizadas ↴</p>
+        </div>
+        <div class="tech">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+      </li>
+      <hr>
+      <li class="projetos-item">
+        <img loading="lazy" src="./assets/img/totem.png.png" alt="">
+        <div class="projetos-informacao">
+          <h3 class="font-1-m-b">Totem informartivo</h3>
+          <p class="cor-8">Web</p>
+          <p class="font-2-xs">Projeto realizado durante o periodo de <strong class="cor-8">Estágio</strong> do curso técnico, feito com intuito de facilitar o acesso a informação sobre velórios organizados pela empresa. <strong class="cor-8">CRUD</strong> realizado com o framework <strong class="cor-8">Laravel (PHP)</strong> e <strong class="cor-8">SQL Server</strong> como database.</p>
+          <p class="cor-8">Tecnologias utilizadas ↴</p>
+          <div class="tech">
+            <span>PHP</span>
+            <span>Laravel</span>
+            <span>SQL Server</span>
+          </div>
+        </div>
+      </li>
+    </ul>
   </section>
 
   <footer class="footer-bg" id="contato">
@@ -156,15 +159,15 @@
       <div class="modal-certificados">
         <div>
           <p>Origamid HTML & CSS</p>
-          <img src="./assets/img/certificados/certificate-html-css-origamid-1.png" alt="">
+          <img loading="lazy" src="./assets/img/certificados/certificate-html-css-origamid-1.png" alt="">
         </div>
         <div>
           <p>JavaScript: Getting Started - pluralsight</p>
-          <img src="/assets/img/certificados/certificate-js-plural-1.png" alt="">
+          <img loading="lazy" src="/assets/img/certificados/certificate-js-plural-1.png" alt="">
         </div>
         <div>
           <p>Getting Started with Docker - pluralsight</p>
-          <img src="/assets/img/certificados/certificate-docker-1.png" alt="">
+          <img loading="lazy" src="/assets/img/certificados/certificate-docker-1.png" alt="">
         </div>
       </div>
     </div>
