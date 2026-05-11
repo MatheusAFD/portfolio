@@ -10,8 +10,21 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+.output
+.nitro
+.vercel
 *.local
 .env
+.env.*
+!.env.example
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Playwright / MCP runtime
+.playwright-mcp
+test-results
+playwright-report
 
 # Editor directories and files
 .vscode/*
