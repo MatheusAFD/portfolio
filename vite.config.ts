@@ -9,13 +9,32 @@ export default defineConfig({
   server: {
     port: 3000,
     watch: {
-      ignored: ['**/routeTree.gen.ts']
-    }
+      ignored: ['**/routeTree.gen.ts'],
+    },
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src')
-    }
+      '@': path.resolve(__dirname, './src'),
+    },
   },
-  plugins: [tailwindcss(), tanstackStart({ srcDirectory: 'src' }), viteReact(), nitro()]
+  plugins: [
+    tailwindcss(),
+    tanstackStart({
+      srcDirectory: 'src',
+      spa: {
+        enabled: true,
+        prerender: {
+          outputPath: '/index',
+          crawlLinks: false,
+        },
+      },
+    }),
+    viteReact(),
+    nitro({
+      preset: 'node-server',
+      prerender: {
+        autoSubfolderIndex: false,
+      },
+    }),
+  ],
 })
