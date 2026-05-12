@@ -21,12 +21,9 @@ export default defineConfig({
     tailwindcss(),
     tanstackStart({
       srcDirectory: 'src',
-      spa: {
+      prerender: {
         enabled: true,
-        prerender: {
-          outputPath: '/index',
-          crawlLinks: false,
-        },
+        crawlLinks: true,
       },
     }),
     viteReact(),
