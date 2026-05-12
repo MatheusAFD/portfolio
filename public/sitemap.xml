@@ -4,19 +4,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
 >
   <url>
-    <loc>https://matheusaraujo.vercel.app/pt</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://matheusaraujo.vercel.app/pt"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://matheusaraujo.vercel.app/en"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://matheusaraujo.vercel.app/pt"/>
+    <loc>https://mathlab.cc/pt</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mathlab.cc/pt"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://mathlab.cc/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mathlab.cc/pt"/>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://matheusaraujo.vercel.app/en</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://matheusaraujo.vercel.app/pt"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://matheusaraujo.vercel.app/en"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://matheusaraujo.vercel.app/pt"/>
+    <loc>https://mathlab.cc/en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mathlab.cc/pt"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://mathlab.cc/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mathlab.cc/pt"/>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>

@@ -31,7 +31,7 @@
   <text x="96" y="410" font-family="Inter, system-ui, sans-serif" font-size="40" font-weight="500" fill="url(#grad)">Software Engineer</text>
   <text x="96" y="470" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="400" fill="#c4b5fd" opacity="0.85">React · TypeScript · Next.js · Node · GraphQL</text>
 
-  <text x="96" y="560" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="22" font-weight="500" fill="#67e8f9" opacity="0.85">matheusaraujo.vercel.app</text>
+  <text x="96" y="560" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="22" font-weight="500" fill="#67e8f9" opacity="0.85">mathlab.cc</text>
 
   <g transform="translate(1024, 510)" opacity="0.8">
     <circle cx="0" cy="0" r="6" fill="#a78bfa" />

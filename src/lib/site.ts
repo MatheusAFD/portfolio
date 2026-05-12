@@ -1,5 +1,5 @@
 export const SITE_URL = (
-  import.meta.env.VITE_SITE_URL ?? 'https://matheusaraujo.vercel.app'
+  import.meta.env.VITE_SITE_URL ?? 'https://mathlab.cc'
 ).replace(/\/$/, '')
 
 export const DEFAULT_LOCALE = 'pt' as const
