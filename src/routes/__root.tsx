@@ -1,6 +1,7 @@
 /// <reference types="vite/client" />
 import { createRootRoute, HeadContent, Scripts, useRouterState } from '@tanstack/react-router'
 import type { ReactNode } from 'react'
+import { ContactFab } from '@/components/layout/contact-fab'
 import { Footer } from '@/components/layout/footer'
 import { Header } from '@/components/layout/header'
 import { isLocale } from '@/i18n'
@@ -57,6 +58,7 @@ function RootDocument({ children }: { children: ReactNode }) {
           <main>{children}</main>
           <Footer />
         </div>
+        <ContactFab />
         <Scripts />
       </body>
     </html>
