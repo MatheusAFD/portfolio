@@ -19,7 +19,7 @@ const base =
 
 const variants: Record<Variant, string> = {
   primary:
-    'bg-gradient-to-r from-(--color-accent) to-(--color-accent-2) text-(--color-bg) shadow-(--shadow-glow) hover:brightness-110 active:brightness-95',
+    'bg-(--color-accent) text-(--color-bg) shadow-(--shadow-glow) hover:brightness-110 active:brightness-95',
   secondary:
     'bg-(--color-surface) text-(--color-fg) border border-(--color-border) hover:border-(--color-border-strong) hover:bg-(--color-surface-2)',
   ghost: 'bg-transparent text-(--color-fg) hover:bg-(--color-surface)/60'

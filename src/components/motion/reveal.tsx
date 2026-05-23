@@ -1,4 +1,4 @@
-import { type HTMLMotionProps, motion } from 'motion/react'
+import { type HTMLMotionProps, motion, useReducedMotion } from 'motion/react'
 
 type RevealProps = HTMLMotionProps<'div'> & {
   delay?: number
@@ -6,12 +6,20 @@ type RevealProps = HTMLMotionProps<'div'> & {
 }
 
 export function Reveal({ delay = 0, y = 18, ...rest }: RevealProps) {
+  const prefersReduced = useReducedMotion()
+  const initial = prefersReduced ? { opacity: 0 } : { opacity: 0, y }
+  const animate = prefersReduced ? { opacity: 1 } : { opacity: 1, y: 0 }
+
   return (
     <motion.div
-      initial={{ opacity: 0, y }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={initial}
+      whileInView={animate}
       viewport={{ once: true, amount: 0.05 }}
-      transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1], delay }}
+      transition={{
+        duration: prefersReduced ? 0.3 : 0.7,
+        ease: [0.22, 1, 0.36, 1],
+        delay: prefersReduced ? 0 : delay,
+      }}
       {...rest}
     />
   )

@@ -31,7 +31,7 @@ export function Header() {
           href={`${home}#hero`}
           className='group flex items-center gap-2 font-mono text-sm font-semibold tracking-tight'
         >
-          <span className='grid size-8 place-items-center rounded-full bg-linear-to-br from-accent to-accent-2 text-bg'>
+          <span className='grid size-8 place-items-center rounded-full bg-accent text-bg'>
             {profile.initials}
           </span>
           <span className='hidden sm:inline text-fg'>
@@ -56,7 +56,7 @@ export function Header() {
             to={`/${otherLocale}`}
             aria-label={`Switch language to ${otherLabel}`}
             hrefLang={otherLocale === 'pt' ? 'pt-BR' : 'en-US'}
-            className='hidden sm:inline-flex h-9 items-center rounded-full border border-border px-3 font-mono text-xs font-medium uppercase tracking-[0.18em] text-fg-muted transition hover:border-accent hover:text-fg'
+            className='hidden sm:inline-flex h-9 items-center rounded-full border border-border px-3 font-mono text-xs font-medium uppercase tracking-[0.22em] text-fg-muted transition hover:border-accent hover:text-fg'
           >
             {otherLabel}
           </Link>
@@ -96,7 +96,7 @@ export function Header() {
                 )}
               >
                 <div className='flex items-center justify-between'>
-                  <Dialog.Title className='font-mono text-xs uppercase tracking-[0.2em] text-fg-muted'>
+                  <Dialog.Title className='font-mono text-xs uppercase tracking-[0.22em] text-fg-muted'>
                     {t.nav.menu}
                   </Dialog.Title>
                   <Dialog.Close
@@ -121,7 +121,7 @@ export function Header() {
                     to={`/${otherLocale}`}
                     onClick={() => setOpen(false)}
                     hrefLang={otherLocale === 'pt' ? 'pt-BR' : 'en-US'}
-                    className='mt-2 rounded-lg px-3 py-3 font-mono text-xs uppercase tracking-[0.18em] text-fg-muted transition hover:bg-surface-2'
+                    className='mt-2 rounded-lg px-3 py-3 font-mono text-xs uppercase tracking-[0.22em] text-fg-muted transition hover:bg-surface-2'
                   >
                     {otherLabel}
                   </Link>
