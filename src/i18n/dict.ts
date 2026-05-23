@@ -16,6 +16,11 @@ export type Dict = {
       projects: string
       contact: string
     }
+    now: {
+      label: string
+      location: string
+      coding: string
+    }
     terminal: {
       header: string
       live: string
@@ -29,7 +34,14 @@ export type Dict = {
     titleTrail: string
     description: string
     bio: string[]
-    stats: ReadonlyArray<{ value: string; label: string; hint: string }>
+    pullQuote: string
+    meta: {
+      location: { label: string; value: string }
+      languages: { label: string; value: string }
+      focus: { label: string; value: string }
+      years: { label: string; value: string }
+      current: { label: string; value: string }
+    }
   }
   experience: {
     eyebrow: string
@@ -44,49 +56,57 @@ export type Dict = {
       current?: boolean
       bullets: string[]
     }>
+    earlier: {
+      period: string
+      description: string
+    }
   }
   stack: {
     eyebrow: string
     title: string
     description: string
-    groups: ReadonlyArray<{
+    columns: ReadonlyArray<{
       title: string
-      description: string
-      items: string[]
-      span?: 'sm' | 'md' | 'lg'
+      items: ReadonlyArray<string>
     }>
+    marquee: ReadonlyArray<string>
   }
   projects: {
     eyebrow: string
     title: string
     description: string
+    filters: {
+      all: string
+      web: string
+      ai: string
+      oss: string
+    }
     items: ReadonlyArray<{
       slug: string
       name: string
       tagline: string
       description: string
       techs: string[]
-      repoUrl: string
+      repoUrl?: string
       liveUrl?: string
+      privateRepo?: boolean
       featured: boolean
       highlight?: 'new' | 'oss' | 'ai'
     }>
   }
   contact: {
     eyebrow: string
-    titleLead: string
-    titleAccent: string
-    titleTrail: string
-    description: string
-    email: {
-      label: string
-      sub: string
-      aria: string
+    heading: {
+      lead: string
+      accent: string
+      trail: string
     }
-    linkedin: {
-      label: string
-      sub: string
-      aria: string
+    description: string
+    emailAria: string
+    chips: {
+      linkedin: string
+      github: string
+      location: string
     }
   }
   footer: {

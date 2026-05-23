@@ -1,13 +1,12 @@
-import { ArrowDown, Mail, MapPin, Sparkles } from 'lucide-react'
+import { ArrowDown, Mail, Sparkles } from 'lucide-react'
 import { motion } from 'motion/react'
 import { Button } from '@/components/ui/button'
-import { GithubIcon, LinkedinIcon } from '@/components/ui/icons'
 import { profile } from '@/data/profile'
 import { useDict } from '@/i18n'
 
 const tone = {
   comment: 'text-fg-subtle',
-  cmd: 'text-accent-2',
+  cmd: 'text-accent',
   out: 'text-fg',
 } as const
 
@@ -19,37 +18,34 @@ const prefix = {
 
 export function Hero() {
   const t = useDict()
+  const [firstName, ...rest] = profile.name.split(' ')
+  const lastName = rest.join(' ')
+
   return (
     <section
       id='hero'
-      className='relative overflow-hidden scroll-mt-24 pt-20 pb-16 md:pt-28 md:pb-24'
+      className='relative overflow-hidden scroll-mt-24 pt-24 pb-20 md:pt-36 md:pb-32'
     >
-      <div className='container-app grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]'>
+      <div className='container-app grid items-center gap-16 lg:grid-cols-[1.15fr_0.85fr]'>
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         >
-          <h1 className='text-balance text-4xl font-semibold tracking-tight md:text-6xl'>
-            <span className='block text-fg-muted text-lg md:text-xl font-medium font-mono mb-3'>
-              {t.hero.greeting}
-            </span>
-            <span className='block'>
-              {profile.name.split(' ')[0]}{' '}
-              <span className='text-gradient'>
-                {profile.name.split(' ').slice(1).join(' ')}
-              </span>
-            </span>
+          <h1 className='text-balance text-[clamp(3rem,7vw,6rem)] font-semibold leading-[0.95] tracking-[-0.04em]'>
+            <span className='block text-fg'>{firstName}</span>
+            <span className='block text-display text-accent'>{lastName}</span>
           </h1>
 
-          <p className='mt-6 max-w-xl text-base text-fg-muted md:text-lg'>
-            {t.hero.role}
-          </p>
-          <p className='mt-3 max-w-xl text-base text-fg-muted'>
+          <p className='mt-8 max-w-xl text-lg text-fg-muted md:text-xl'>
             {t.profile.tagline}
           </p>
 
-          <div className='mt-8 flex flex-wrap items-center gap-3'>
+          <p className='mt-4 font-mono text-xs uppercase tracking-[0.22em] text-fg-subtle'>
+            {t.hero.role}
+          </p>
+
+          <div className='mt-10 flex flex-wrap items-center gap-3'>
             <Button as='a' href='#projects' size='lg'>
               {t.hero.cta.projects}
               <ArrowDown size={16} />
@@ -64,48 +60,26 @@ export function Hero() {
               {t.hero.cta.contact}
             </Button>
           </div>
-
-          <div className='mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-fg-muted'>
-            <span className='inline-flex items-center gap-2'>
-              <MapPin size={14} /> {t.profile.location}
-            </span>
-            <a
-              href={profile.links.github}
-              target='_blank'
-              rel='noreferrer'
-              className='inline-flex items-center gap-2 hover:text-fg'
-            >
-              <GithubIcon size={14} /> github.com/matheusafd
-            </a>
-            <a
-              href={profile.links.linkedin}
-              target='_blank'
-              rel='noreferrer'
-              className='inline-flex items-center gap-2 hover:text-fg'
-            >
-              <LinkedinIcon size={14} /> /in/matheusaraujof
-            </a>
-          </div>
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0, scale: 0.94 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.9, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
           className='relative mx-auto w-full max-w-md lg:ml-auto'
         >
-          <div className='pointer-events-none absolute -inset-10 rounded-full bg-linear-to-tr from-accent/35 via-accent-2/25 to-transparent blur-3xl' />
+          <div className='pointer-events-none absolute -inset-10 rounded-full bg-accent/20 blur-3xl' />
           <div className='relative overflow-hidden rounded-tile border border-border bg-bg-2/80 backdrop-blur-md shadow-(--shadow-glow)'>
             <div className='pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-accent to-transparent' />
 
             <div className='flex items-center gap-1.5 border-b border-border px-4 py-3'>
-              <span className='size-2.5 rounded-full bg-red-500/70' />
-              <span className='size-2.5 rounded-full bg-amber-500/70' />
-              <span className='size-2.5 rounded-full bg-emerald-500/70' />
+              <span className='size-2.5 rounded-full bg-fg-subtle/40' />
+              <span className='size-2.5 rounded-full bg-fg-subtle/40' />
+              <span className='size-2.5 rounded-full bg-accent/70' />
               <span className='ml-3 font-mono text-xs text-fg-subtle'>
                 {t.hero.terminal.header}
               </span>
-              <span className='ml-auto inline-flex items-center gap-1 font-mono text-[10px] uppercase tracking-[0.2em] text-fg-subtle'>
+              <span className='ml-auto inline-flex items-center gap-1 font-mono text-[10px] uppercase tracking-[0.22em] text-fg-subtle'>
                 <Sparkles size={11} className='text-accent' />
                 {t.hero.terminal.live}
               </span>
@@ -141,10 +115,15 @@ export function Hero() {
               />
             </div>
 
-            <div className='grid grid-cols-3 gap-2 border-t border-border px-5 py-3 text-center font-mono text-[10px] uppercase tracking-[0.2em] text-fg-subtle'>
-              <span>react</span>
-              <span>typescript</span>
-              <span>next.js</span>
+            <div className='grid grid-cols-2 gap-2 border-t border-border px-5 py-3 text-center font-mono text-[10px] uppercase tracking-[0.22em] text-fg-subtle'>
+              <div className='flex flex-col gap-0.5'>
+                <span className='text-fg-subtle/70'>{t.hero.now.location}</span>
+                <span className='truncate text-fg'>{t.profile.location}</span>
+              </div>
+              <div className='flex flex-col gap-0.5'>
+                <span className='text-fg-subtle/70'>{t.hero.now.coding}</span>
+                <span className='truncate text-fg'>{profile.yearsOfExperience}+ yr</span>
+              </div>
             </div>
           </div>
         </motion.div>

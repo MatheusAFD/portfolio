@@ -9,11 +9,11 @@ export function HomeSections() {
   return (
     <>
       <Hero />
-      <About />
-      <Experience />
-      <Stack />
-      <Projects />
-      <Contact />
+      <About index='01' />
+      <Experience index='02' />
+      <Stack index='03' />
+      <Projects index='04' />
+      <Contact index='05' />
     </>
   )
 }
