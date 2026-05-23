@@ -1,10 +1,13 @@
 import { ArrowUpRight } from 'lucide-react'
+import { useState } from 'react'
 import { Reveal } from '@/components/motion/reveal'
 import { ProjectCard } from '@/components/projects/project-card'
 import { Card } from '@/components/ui/card'
 import { GithubIcon } from '@/components/ui/icons'
 import { profile } from '@/data/profile'
 import { useDict, useLocale } from '@/i18n'
+import type { Dict } from '@/i18n/dict'
+import { cn } from '@/lib/cn'
 
 const moreCopy = {
   pt: {
@@ -21,16 +24,58 @@ const moreCopy = {
   },
 } as const
 
+type ProjectItem = Dict['projects']['items'][number]
+type Category = 'all' | 'web' | 'ai' | 'oss'
+
+function matches(p: ProjectItem, c: Category) {
+  if (c === 'all') return true
+  if (c === 'ai') return p.highlight === 'ai'
+  if (c === 'oss') return p.highlight === 'oss'
+  return p.highlight !== 'ai' && p.highlight !== 'oss'
+}
+
 export function ProjectBento() {
   const t = useDict()
   const locale = useLocale()
   const more = moreCopy[locale]
+  const [active, setActive] = useState<Category>('all')
+
   const featured = t.projects.items.filter((p) => p.featured)
+  const filtered = featured.filter((p) => matches(p, active))
+
+  const filters: Array<{ key: Category; label: string }> = [
+    { key: 'all', label: t.projects.filters.all },
+    { key: 'web', label: t.projects.filters.web },
+    { key: 'ai', label: t.projects.filters.ai },
+    { key: 'oss', label: t.projects.filters.oss },
+  ]
 
   return (
     <div className='space-y-6'>
+      <div className='mb-8 flex flex-wrap gap-2'>
+        {filters.map((f) => {
+          const isActive = f.key === active
+          return (
+            <button
+              key={f.key}
+              type='button'
+              onClick={() => setActive(f.key)}
+              aria-pressed={isActive}
+              className={cn(
+                'rounded-full border px-3 py-1.5 font-mono text-xs uppercase tracking-[0.22em] transition',
+                isActive
+                  ? 'border-accent bg-accent/10 text-accent'
+                  : 'border-border text-fg-muted hover:border-fg-muted hover:text-fg',
+              )}
+            >
+              {f.label}
+            </button>
+          )
+        })}
+      </div>
+
       <div className='grid gap-4 md:grid-cols-12'>
-        {featured.map((project, i) => (
+        {filtered.map((project, i) => (
           <Reveal
             key={project.slug}
             delay={i * 0.06}
@@ -55,7 +100,7 @@ export function ProjectBento() {
                 <GithubIcon size={26} />
               </span>
               <div>
-                <p className='font-mono text-xs uppercase tracking-[0.2em] text-accent'>
+                <p className='font-mono text-xs uppercase tracking-[0.22em] text-accent'>
                   {more.eyebrow}
                 </p>
                 <p className='mt-1 text-xl font-semibold tracking-tight text-fg md:text-2xl'>

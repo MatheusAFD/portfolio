@@ -1,4 +1,4 @@
-import { ArrowUpRight, ExternalLink } from 'lucide-react'
+import { ArrowUpRight, ExternalLink, Lock } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { Card } from '@/components/ui/card'
 import { GithubIcon } from '@/components/ui/icons'
@@ -99,14 +99,20 @@ export function ProjectCard({
       </ul>
 
       <div className='mt-auto flex items-center gap-3 pt-6'>
-        <a
-          href={project.repoUrl}
-          target='_blank'
-          rel='noreferrer'
-          className='inline-flex items-center gap-1.5 text-sm text-fg-muted hover:text-fg'
-        >
-          <GithubIcon size={15} /> Repo
-        </a>
+        {project.repoUrl ? (
+          <a
+            href={project.repoUrl}
+            target='_blank'
+            rel='noreferrer'
+            className='inline-flex items-center gap-1.5 text-sm text-fg-muted hover:text-fg'
+          >
+            <GithubIcon size={15} /> Repo
+          </a>
+        ) : project.privateRepo ? (
+          <span className='inline-flex items-center gap-1.5 text-sm text-fg-subtle'>
+            <Lock size={14} /> Private
+          </span>
+        ) : null}
         {project.liveUrl && (
           <a
             href={project.liveUrl}
