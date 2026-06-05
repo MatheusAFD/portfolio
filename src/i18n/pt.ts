@@ -57,7 +57,10 @@ export const pt: Dict = {
       languages: { label: 'Idiomas', value: 'Português · Inglês' },
       focus: { label: 'Foco', value: 'Produto · Performance · DX' },
       years: { label: 'Programando', value: `+${years} anos` },
-      current: { label: 'Atualmente', value: '@ Twila — Mid Frontend Engineer' },
+      current: {
+        label: 'Atualmente',
+        value: '@ Twila — Mid Frontend Engineer',
+      },
     },
   },
   experience: {
@@ -200,18 +203,19 @@ export const pt: Dict = {
     items: [
       {
         slug: 'spotiq',
-        name: 'spotiq',
-        tagline: 'Busca estratégica de pontos baseada em dados.',
+        name: 'SpotIQ',
+        tagline: 'Análise de ponto comercial por CEP.',
         description:
-          'Encontre o melhor ponto para um negócio ou visita com scoring orientado por dados: demografia, concorrência, fluxo e fit de categoria — sem achismo.',
+          'Digite um CEP e receba em minutos um relatório de viabilidade: nichos recomendados, análise de concorrência e perfil demográfico do entorno. Dados do IBGE e OpenStreetMap, ranqueados por IA, com raio ajustável (500m, 1km, 2km).',
         techs: [
           'TypeScript',
-          'React Native',
-          'Maps',
+          'IBGE',
+          'OpenStreetMap',
+          'IA',
           'Geo',
-          'Node.js',
-          'PostgreSQL',
+          'Mercado Pago',
         ],
+        liveUrl: 'https://spotiq.cc',
         privateRepo: true,
         featured: true,
         highlight: 'new',
@@ -274,8 +278,7 @@ export const pt: Dict = {
       accent: 'construir',
       trail: ' algo.',
     },
-    description:
-      'Aberto a colaborações e papos sobre engenharia de produto.',
+    description: 'Aberto a colaborações e papos sobre engenharia de produto.',
     emailAria: 'Enviar e-mail',
     chips: {
       linkedin: 'LinkedIn',

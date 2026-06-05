@@ -123,7 +123,8 @@ export const en: Dict = {
   stack: {
     eyebrow: 'Stack',
     title: 'Toolkit',
-    description: 'The tools I work with, grouped by where they live in the stack.',
+    description:
+      'The tools I work with, grouped by where they live in the stack.',
     columns: [
       {
         title: 'Frontend',
@@ -200,18 +201,19 @@ export const en: Dict = {
     items: [
       {
         slug: 'spotiq',
-        name: 'spotiq',
-        tagline: 'Strategic point-of-interest search backed by data.',
+        name: 'SpotIQ',
+        tagline: 'Commercial location analysis by ZIP code.',
         description:
-          'Locate the best spot for a business or visit using data-driven scoring: demographics, competition, foot traffic and category fit — not gut feeling.',
+          'Enter a ZIP code and get a viability report in minutes: recommended niches, competition analysis and the demographic profile of the area. Built on IBGE and OpenStreetMap data, ranked by AI, with adjustable radius (500m, 1km, 2km).',
         techs: [
           'TypeScript',
-          'React Native',
-          'Maps',
+          'IBGE',
+          'OpenStreetMap',
+          'AI',
           'Geo',
-          'Node.js',
-          'PostgreSQL',
+          'Mercado Pago',
         ],
+        liveUrl: 'https://spotiq.cc',
         privateRepo: true,
         featured: true,
         highlight: 'new',
