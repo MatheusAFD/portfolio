@@ -68,9 +68,8 @@ export function Hero() {
           transition={{ duration: 0.9, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
           className='relative mx-auto w-full max-w-md lg:ml-auto'
         >
-          <div className='pointer-events-none absolute -inset-10 rounded-full bg-accent/20 blur-3xl' />
-          <div className='relative overflow-hidden rounded-tile border border-border bg-bg-2/80 backdrop-blur-md shadow-(--shadow-glow)'>
-            <div className='pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-accent to-transparent' />
+          <div className='relative overflow-hidden rounded-tile border border-border bg-bg-2/80 backdrop-blur-md'>
+            <div className='pointer-events-none absolute inset-x-0 top-0 h-px bg-accent/40' />
 
             <div className='flex items-center gap-1.5 border-b border-border px-4 py-3'>
               <span className='size-2.5 rounded-full bg-fg-subtle/40' />
@@ -122,7 +121,9 @@ export function Hero() {
               </div>
               <div className='flex flex-col gap-0.5'>
                 <span className='text-fg-subtle/70'>{t.hero.now.coding}</span>
-                <span className='truncate text-fg'>{profile.yearsOfExperience}+ yr</span>
+                <span className='truncate text-fg'>
+                  {profile.yearsOfExperience}+ yr
+                </span>
               </div>
             </div>
           </div>

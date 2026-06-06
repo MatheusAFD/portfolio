@@ -5,7 +5,7 @@ type RevealProps = HTMLMotionProps<'div'> & {
   y?: number
 }
 
-export function Reveal({ delay = 0, y = 18, ...rest }: RevealProps) {
+export function Reveal({ delay = 0, y = 8, ...rest }: RevealProps) {
   const prefersReduced = useReducedMotion()
   const initial = prefersReduced ? { opacity: 0 } : { opacity: 0, y }
   const animate = prefersReduced ? { opacity: 1 } : { opacity: 1, y: 0 }
