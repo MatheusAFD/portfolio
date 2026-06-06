@@ -8,7 +8,7 @@ export function Footer() {
     <footer className='border-t border-border py-10'>
       <div className='container-app flex flex-col items-start justify-between gap-4 text-sm text-fg-muted md:flex-row md:items-center'>
         <p>
-          © {year} {profile.name}. {t.footer.builtWith}
+          © {year} {profile.name}.
         </p>
         <div className='flex items-center gap-4'>
           <a
