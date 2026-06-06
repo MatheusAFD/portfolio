@@ -69,7 +69,6 @@ export type Dict = {
       title: string
       items: ReadonlyArray<string>
     }>
-    marquee: ReadonlyArray<string>
   }
   projects: {
     eyebrow: string
@@ -110,7 +109,6 @@ export type Dict = {
     }
   }
   footer: {
-    builtWith: string
     source: string
     linkedin: string
     email: string

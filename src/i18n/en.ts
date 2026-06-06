@@ -35,35 +35,35 @@ export const en: Dict = {
         { c: 'out', t: 'matheus araújo · software engineer' },
         { c: 'cmd', t: 'cat stack.txt' },
         { c: 'out', t: 'react · typescript · next.js · node' },
-        { c: 'cmd', t: 'echo $FOCUS' },
-        { c: 'out', t: 'product · performance · scalability' },
+        { c: 'cmd', t: 'echo $NOW' },
+        { c: 'out', t: 'building spotiq — location analysis by ZIP' },
       ],
     },
   },
   about: {
     eyebrow: 'About',
-    titleLead: 'Engineering that delivers ',
-    titleAccent: 'results',
-    titleTrail: '.',
+    titleLead: 'I build the ',
+    titleAccent: 'front-end',
+    titleTrail: ' people actually use.',
     description:
-      'From intuitive interfaces to high-performance systems: collaboration, precision and scalability.',
+      'Mostly React and TypeScript. The kind of work that ships, gets used, and stays standing.',
     bio: [
-      `Software Engineer with ${years}+ years shipping digital products — from intuitive interfaces to high-performance systems. I turn business needs into robust, measurable and scalable solutions.`,
-      'Focused on React, Next.js and TypeScript, with consistent practice in design systems, automated testing and REST/GraphQL APIs. Continuously learning: front-end architecture, web performance and clean code.',
+      `It's been ${years} years writing front-end for real products. I've worked on B2B platforms, real-time checkouts, a design system that became the base for other teams. What I enjoy most is the part nobody sees: a component that behaves the same everywhere, a page that opens fast, code the next person can read without cursing.`,
+      'Day to day it\'s React, Next.js and TypeScript, plus everything around them. Design systems in Storybook, tests that catch the bug before users do, REST and GraphQL APIs. Lately I keep leaning more toward architecture and web performance.',
     ],
-    pullQuote: 'I build for clarity, ship for outcomes.',
+    pullQuote: "If it's hard to use, it's not done.",
     meta: {
       location: { label: 'Location', value: 'Fortaleza, CE — Brazil' },
       languages: { label: 'Languages', value: 'Portuguese · English' },
-      focus: { label: 'Focus', value: 'Product · Performance · DX' },
+      focus: { label: 'Focus', value: 'Front-end · Performance · Design systems' },
       years: { label: 'Coding', value: `${years}+ years` },
       current: { label: 'Currently', value: '@ Twila — Mid Frontend Engineer' },
     },
   },
   experience: {
     eyebrow: 'Experience',
-    title: 'Professional journey',
-    description: `Four teams, ${years}+ years focused on product, performance and quality.`,
+    title: 'Where I have worked',
+    description: `Four teams across ${years} years. Started in PHP, now I live in React and Next.js.`,
     current: 'current',
     items: [
       {
@@ -122,9 +122,8 @@ export const en: Dict = {
   },
   stack: {
     eyebrow: 'Stack',
-    title: 'Toolkit',
-    description:
-      'The tools I work with, grouped by where they live in the stack.',
+    title: 'Tools I reach for',
+    description: 'Grouped by where they live in the stack.',
     columns: [
       {
         title: 'Frontend',
@@ -166,32 +165,12 @@ export const en: Dict = {
         ],
       },
     ],
-    marquee: [
-      'React',
-      'TypeScript',
-      'Next.js',
-      'TanStack',
-      'Node.js',
-      'NestJS',
-      'GraphQL',
-      'PostgreSQL',
-      'Prisma',
-      'Drizzle',
-      'Better Auth',
-      'Tailwind',
-      'React Native',
-      'Turborepo',
-      'Playwright',
-      'Docker',
-      'Vite',
-      'Biome',
-    ],
   },
   projects: {
     eyebrow: 'Projects',
-    title: "What I'm building",
+    title: 'Things I have built',
     description:
-      'A mix of open-source products, AI tools and experiments. Focus on DX, performance and product.',
+      'Side projects and open-source. What I make when I get to choose the problem.',
     filters: {
       all: 'All',
       web: 'Web',
@@ -223,7 +202,7 @@ export const en: Dict = {
         name: 'shrink',
         tagline: 'Mobile and tablet simulator on any website.',
         description:
-          'Open-source browser extension to test layouts across viewports. No analytics, no paywalls — just resize and test.',
+          'Open-source browser extension to test layouts across viewports. No analytics, no paywalls. Just resize and test.',
         techs: ['TypeScript', 'Browser Extension', 'Chrome', 'Firefox'],
         repoUrl: 'https://github.com/MatheusAFD/shrink',
         featured: true,
@@ -272,12 +251,11 @@ export const en: Dict = {
   contact: {
     eyebrow: 'Contact',
     heading: {
-      lead: "Let's ",
-      accent: 'build',
-      trail: ' something.',
+      lead: 'Got a ',
+      accent: 'project',
+      trail: ' in mind?',
     },
-    description:
-      'Open to collaborations and conversations about product engineering.',
+    description: 'Drop me a message.',
     emailAria: 'Send email',
     chips: {
       linkedin: 'LinkedIn',
@@ -286,7 +264,6 @@ export const en: Dict = {
     },
   },
   footer: {
-    builtWith: 'Built with React, TanStack Start and Tailwind v4.',
     source: 'Source',
     linkedin: 'LinkedIn',
     email: 'Email',
@@ -296,8 +273,8 @@ export const en: Dict = {
     location: 'Fortaleza, CE — Brazil',
     headline:
       'Software Engineer @Twila — React, TypeScript, Next.js, Node, GraphQL.',
-    tagline: `${years}+ years building digital products. Collaboration → Precision → Scale.`,
-    aboutSummary: `Software Engineer with ${years}+ years building digital products with React, TypeScript, Next.js, Node and GraphQL.`,
+    tagline: `Front-end engineer with ${years} years in. React, TypeScript, and a soft spot for fast, well-built interfaces.`,
+    aboutSummary: `Front-end engineer with ${years} years building products in React, TypeScript, Next.js, Node and GraphQL.`,
   },
 }
 
